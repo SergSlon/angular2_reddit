@@ -1,3 +1,25 @@
-<h1>
-  {{title}}
-</h1>
+<form class="ui large form segment">
+  <h3 class="ui header">Add a Link</h3>
+
+  <div class="field">
+    <label>
+      Title:
+      <input name="title">
+    </label>
+  </div>
+
+  <div class="field">
+    <label>
+      Link:
+      <input name="link">
+    </label>
+  </div>
+
+  <!-- added this button -->
+  <button
+    (click)="addArticle()"
+    class="ui positive right floated button">
+    Submit link
+  </button>
+
+</form>
