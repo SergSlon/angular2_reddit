@@ -4,20 +4,28 @@
   <div class="field">
     <label>
       Title:
-      <input name="title">
+      <input name="title" #newtitle>
+      <!--
+        #newtitle - template variable
+        This markup tells Angular to bind this <input> to the variable newtitle
+      -->
     </label>
   </div>
 
   <div class="field">
     <label>
       Link:
-      <input name="link">
+      <input name="link" #newlink>
+      <!--
+        #newlink - template variable
+        This markup tells Angular to bind this <input> to the variable newlink
+       -->
     </label>
   </div>
 
   <!-- added this button -->
   <button
-    (click)="addArticle()"
+    (click)="addArticle(newtitle, newlink)"
     class="ui positive right floated button">
     Submit link
   </button>
